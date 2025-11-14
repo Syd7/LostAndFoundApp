@@ -23,14 +23,14 @@ public class LostItemsController{
 	@GET
 	@Path("/report")
 	//@Produces(MediaType.APPLICATION_JSON)
-	public String makeReport(@QueryParam("category") String category)
+	public String makeReport(@QueryParam("name") String name)
 	{
 		return "report works";
 	}
 	
 	@GET
 	@Path("/find")
-	public String findItem(@QueryParam("category") String category)
+	public String findItem(@QueryParam("name") String name)
 	{
 		return "findItem works";
 	}
