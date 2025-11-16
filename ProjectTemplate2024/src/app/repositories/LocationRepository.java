@@ -10,5 +10,5 @@ import app.entity.Location;
 public interface LocationRepository
 	extends JpaRepository<Location, Long>
 {
-	public Location findByPk(Long pk);
+
 }

@@ -14,7 +14,7 @@ public class LostAndFoundComponent {
 	private LocationRepository locrepo;
 	
 	public Location findLocationById(Long id) {
-		Location location = locrepo.findByPk(id);
+		Location location = locrepo.findById(id).orElse(null);
 		return location;
 	}
 	
